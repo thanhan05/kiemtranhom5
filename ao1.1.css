@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f0e9e9;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 90px;
+
+}
+
+nav ul li a {
+
+    color: #f7f7f7;
+    text-decoration:none;
+}
+
+nav ul li a:hover {
+    color: #ec0a0a;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    margin: 3px;
+    padding: 20px;
+}
+
+.product a img {
+    height: auto;
+    max-width:100%;
+}
+.product span img{
+    max-width: 100px;
+    border: 1px solid #171515;
+    border-radius: 5px;
+    position: relative;
+    left: 10px;
+}
+
+.product span img:hover{
+    filter: drop-shadow(0 0 10px rgb(212, 183, 183));
+    scale: 1;
+}
+
+.information{
+    background-color: #f9f7f7;
+    border: 1px solid #fefcfc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 25px;
+    text-align:start;
+   
+
+}
+
+.informtion p{
+    max-width: 100%;
+}
+
+.information span img{
+    max-width: 90px;
+    border: 1px solid #171515;
+    border-radius: 5px;
+}
+.information span img:hover{
+    filter: drop-shadow(0 0 10px rgb(212, 183, 183));
+    scale: 1;
+}
+
+.table1{
+    background-color: #fcfcfc;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+   
+}
+.table1 tr td{
+    color: #060606;
+    padding-left: 5px;
+}
+
+.mua{
+    font-size: 20px;
+    color: #faf4f4;
+    background-color: #181717;
+    width:100% ;
+    height: 40px;
+}
+.mua:hover{
+    transition: all 0.5;
+    color: #090909;
+    background-color: rgb(240, 246, 246);
+}
+.introduce p {
+    color: #0f0e0e;
+    position: relative;
+    left: 40px;
+
+    padding: 5px;
+    max-width:91%;
+    height: auto;
+}
+.introduce img{
+    position: relative;
+    left: 40px;
+    max-width: 80%;
+}
+.anh img{
+    max-width: 40%;
+    
+    position: relative;
+    left: 60px;
+    
+    
+}
+form{
+   text-align: center;
+
+}
+form input{
+    min-width:50%;
+    height: 40px;
+    margin: 20px;
+    
+}
+
+.gui{
+    
+    
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    color: #fefafa;
+    background-color: #080101;
+    
+}
+
+
+.footer {
+    position: relative;
+    bottom: 1px;
+    background-color: #181717;
+    color: #f0ebeb;
+    padding: 30px 0;
+    
+}
+
+.footer span{
+    position: relative;
+    left: 50px;
+}
+
+
+
