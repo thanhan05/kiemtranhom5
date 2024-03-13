@@ -65,31 +65,44 @@ main {
     color: #000;
     text-decoration:none;
 }
+
 .star{
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
     
 }
-.star input {
-    appearance:none;
+
+.star input{
+    --width: 2rem;
+    appearance: none;
+    font-size: var(--width);
+    
 }
-.star input::before{
+.star input::before {
     content: "\2605";
     color: #ccc;
-    font-size: 25px;
-    cursor: pointer;
+}
+    
+.star input:nth-child(odd)::before {
+    left: 0;
+}
+.star input:hover::before,
+.star input:hover ~ input::before {
+    color: #ffd465;
 }
 .star input:checked::before,
-.star input:checked~.star input::before{
+.star input:checked~input::before {
     color: #ffb800;
-
 }
+
 
 .xemthem input{
     background-color: #fdfbfb;
     color: #040404;
-
+    font-size: 20px;
     margin: 5px;
+    border-radius: 10px;
 }
 .xemthem input:hover{
     background-color: #0c0b0b;
@@ -105,11 +118,8 @@ main {
     background-color: #181717;
     color: #f0e5e5;
     padding: 30px 0;
+    text-align: center;
     
 }
 
-.footer span{
-    position: relative;
-    left: 50px;
-}
 
