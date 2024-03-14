@@ -4,36 +4,60 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #f0e9e9;
-    padding: 10px 0;
+header{
+    background-color:darkcyan;
+    padding: 10px;
     text-align: center;
+}
+#menu ul {
+    
+    list-style-type: none;
+    text-align: center;
+}
+  
+#menu li {
+    
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
     
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+#menu li a{
+    color: #0c0b0b;
+    font-size: 20px;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 90px;
-
+.sub-menu li a{
+    background-color:cornflowerblue;
+    border-radius: 20px;
+    text-align: center;
 }
-
-nav ul li a {
-
-    color: #f7f7f7;
-    text-decoration:none;
-}
-
-nav ul li a:hover {
-    color: #ec0a0a;
+  
+#menu ul li a {
     text-decoration: none;
+    color: #f1f1f;
+    display: block;
 }
-
+#menu ul li a:hover {
+    
+    background: #e4c9c9;
+    color: #0C0A0A;
+    border-radius: 20px;
+}
+#menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu li {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub-menu {
+    display: block;
+}
 
 main {
     display: flex;
@@ -66,36 +90,14 @@ main {
     text-decoration:none;
 }
 
-.star{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    
-}
-
-.star input{
-    --width: 2rem;
-    appearance: none;
-    font-size: var(--width);
-    
-}
-.star input::before {
-    content: "\2605";
-    color: #ccc;
-}
-    
-.star input:nth-child(odd)::before {
-    left: 0;
-}
-.star input:hover::before,
-.star input:hover ~ input::before {
-    color: #ffd465;
-}
-.star input:checked::before,
-.star input:checked~input::before {
+.sao{
     color: #ffb800;
+    
 }
-
+.gia{
+    color:red;
+    font-size: 20px;"
+}
 
 .xemthem input{
     background-color: #fdfbfb;
