@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:darkcyan;
+    padding: 10px;
+    text-align: center;
+}
+#menu ul {
+    
+    list-style-type: none;
+    text-align: center;
+}
+  
+#menu li {
+    
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    
+}
+#menu li a{
+    color: #0c0b0b;
+    font-size: 20px;
+}
+.sub-menu li a{
+    background-color:cornflowerblue;
+    border-radius: 20px;
+    text-align: center;
+}
+  
+#menu ul li a {
+    text-decoration: none;
+    color: #f1f1f;
+    display: block;
+}
+#menu ul li a:hover {
+    
+    background: #e4c9c9;
+    color: #0C0A0A;
+    border-radius: 20px;
+}
+#menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu li {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub-menu {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+.product:hover{
+    filter: drop-shadow(0 0 10px rgb(212, 183, 183));
+    scale: 1.010;
+}
+
+.product a img {
+    max-width: 100%;
+    height: auto;
+}
+.sao{
+    color: #ffb800;
+    
+}
+
+.gia{
+    color:red;
+    font-size: 20px;"
+}
+
+
+
+.xemthem input{
+    background-color: #fdfbfb;
+    color: #040404;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.xemthem input:hover{
+    background-color: #0c0b0b;
+    color: #f9f8f8;
+
+    margin: 5px;
+}
+
+.footer {
+    position: relative;
+    bottom: 1px;
+    background-color: #181717;
+    color: #f0e5e5;
+    padding: 30px 0;
+    text-align: center;
+    
+}
