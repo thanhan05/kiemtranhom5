@@ -1,6 +1,7 @@
 <html>
     <head>
         <title> Gio Hang </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <style>
         .mgr10{
             margin-bottom: 10px;
@@ -30,59 +31,113 @@
 
     
         header{
-        background-color:darkcyan;
-        padding: 10px;
-        text-align: center;
-        
-        }
-        #menu ul {
-            
-            list-style-type: none;
-            text-align: center;
-        }
-        
-        #menu li {
-            display:inline-block;
-            width: 200px;
-            height: 40px;
-            line-height: 40px;
-            
-        }
-        #menu li a{
-            color: #0c0b0b;
-            font-size: 20px;
-        }
-        .sub-menu li a{
-            background-color:cornflowerblue;
-            border-radius: 20px;
-            text-align: center;
-        }
-        
-        #menu ul li a {
-            text-decoration: none;
-            display: block;
-        }
-        #menu ul li a:hover {
-            
-            background: #e4c9c9;
-            color: #0C0A0A;
-            border-radius: 20px;
-        }
-        #menu ul li > .sub-menu {
-            display: none;
-            position: absolute;
-        }
-        #menu li {
-            position: relative;
-        }
-        .sub-menu {
-            display: none;
-            position: absolute;
-        }
-        #menu ul li:hover .sub-menu {
-            display: block;
-        }
+    background-color:rgb(247, 244, 244);
+    padding: 15px;
+    text-align: center;
+    
+}
 
+#menu ul {
+    
+    list-style-type: none;
+    text-align: center;
+}
+  
+#menu li {
+    display:inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px;
+    
+}
+#menu li a{
+    color: #000000;
+    font-size: 30px;
+}
+.sub-menu li a{
+    background-color:rgb(172, 189, 192);
+    border-radius: 30px;
+    text-align: center;
+}
+  
+#menu ul li a {
+    text-decoration: none;
+    display: block;
+}
+#menu ul li a:hover {
+    
+    background: #1bdfdf;
+    color: #000000;
+    border-radius: 20px;
+}
+#menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu li {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+#menu ul li:hover .sub-menu {
+    display: block;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+.product:hover{
+    filter: drop-shadow(0 0 10px rgb(212, 183, 183));
+    scale: 1.010;
+}
+
+.product a img {
+    max-width: 100%;
+    height: auto;
+}
+.product a{
+    color: #000;
+    text-decoration:none;
+}
+
+.sao{
+    color: #ffb800;
+    
+}
+.gia{
+    color:red;
+    font-size: 20px;
+}
+
+.xemthem input{
+    background-color: #fdfbfb;
+    color: #040404;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.xemthem input:hover{
+    background-color: #0c0b0b;
+    color: #f9f8f8;
+
+    margin: 5px;
+}
 
         
 
@@ -92,24 +147,24 @@
     <body>
         <header>
             <nav id="menu">
-                <h1 > QUYNH SHOP</h1>
-                <ul>
-                    <li><a href="webchinh.html">Trang chủ</a></li>
-                    <li><a href="toi1.html">Tôi</a></li>
-                    <li>
-                        <a href="#">Sản phẩm</a>
-                        <ul class="sub-menu">
-                            <li><a href="ao1.html">Sweater</a></li>
-                            <li><a href="ao2.html">hoodie</a></li>
-                            <li><a href="ao3.html">Áo thun cổ bẻ</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Giohang.html">Giỏ hàng</a></li>
-                    
-                </ul>
-        </nav>
+                    <ul>
+                        <li><a href="webchinh.html"> <i class="fa-solid fa-house"></i> Trang chủ </a></li>
+                        <li><a href="toi1.html"> <i class="fa-solid fa-user"></i> Tôi</a></li>
+                        <li>
+                            <a href="#"> <i class="fa-brands fa-shopify"></i> Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li><a href="ao1.html">Sweater</a></li>
+                                <li><a href="ao2.html">hoodie</a></li>
+                                <li><a href="ao3.html">Áo thun cổ bẻ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Giohang.html"> <i class="fa-solid fa-cart-plus"></i> Giỏ hàng</a></li>
+                        
+                    </ul>
+            </nav>
         </header>
-        <div style="font-size: 40px;">
+    
+        <div style="font-size: 40px; margin-left: 20px;">
             <p> Giỏ hàng</p>
             <hr>
             <p>Chưa có đơn hàng</p>
@@ -118,10 +173,90 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
-        </div>
         
+        </div>
+        <hr>
+        <br>
+        <p style="font-size: 30px; margin-left: 20px;"> Các sản phấm bạn có thể chưa biết</p>
+        <main>
+            <div class="product">
+                <a href="ao1.html">
+                    <img src="https://navyshop.vn/wp-content/uploads/2023/12/5065B-800x800.jpg" alt="Product 1">
+                </a>
+
+                <p>ÁO SWEATER CAO CẤP NAVY 2017D</p>
+                <span class="sao">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <p class="gia">đ265.000</p>
+            
+                <a class="xemthem" href="ao1.html"><input type="submit"  class="gui" value="Xem thêm"></a>
+                
+            </div>
+           
+
+            <div class="product">
+                <a href="ao1.html">
+                    <img src="https://navyshop.vn/wp-content/uploads/2023/10/HZ0029T-400x400.jpg" alt="Product 1">
+                </a>
+
+                <p>ÁO SWEATER CAO CẤP NAVY 2017D</p>
+                <span class="sao">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <p class="gia">đ265.000</p>
+            
+                <a class="xemthem" href="ao1.html"><input type="submit"  class="gui" value="Xem thêm"></a>
+                
+            </div>
+
+            <div class="product">
+                <a href="ao1.html">
+                    <img src="https://navyshop.vn/wp-content/uploads/2023/09/1048B-800x800.jpg" alt="Product 1">
+                </a>
+
+                <p>ÁO SWEATER CAO CẤP NAVY 2017D</p>
+                <span class="sao">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <p class="gia">đ265.000</p>
+            
+                <a class="xemthem" href="ao1.html"><input type="submit"  class="gui" value="Xem thêm"></a>
+                
+            </div>
+
+            <div class="product">
+                <a href="ao1.html">
+                    <img src="https://navyshop.vn/wp-content/uploads/2023/10/HZ0027D.jpg" alt="Product 1">
+                </a>
+
+                <p>ÁO SWEATER CAO CẤP NAVY 2017D</p>
+                <span class="sao">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <p class="gia">đ265.000</p>
+            
+                <a class="xemthem" href="ao1.html"><input type="submit"  class="gui" value="Xem thêm"></a>
+                
+            </div>
+
+        </main>
 
 
         <div class="boxmenu">
